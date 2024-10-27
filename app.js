@@ -39,3 +39,9 @@ function stopDrawing() {// Function to stop
 canvas.addEventListener('mousedown', startDrawing); // Start drawing on mouse down
 canvas.addEventListener('mousemove', draw); // Draw on mouse move
 canvas.addEventListener('mouseup', stopDrawing); // Stop drawing on mouse up
+
+// 4. Add Color Selection and Canvas Clearing
+function clearCanvas() {// Function to clear canvas
+    ctx.clearRect(0, 0, canvas.width, canvas.height)};
+// Add event listener for clear button
+document.getElementById('clearButton').addEventListener('click', clearCanvas); // Clear canvas on click
