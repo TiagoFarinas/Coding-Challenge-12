@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Drawing Application</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 20px};
+        #drawingCanvas {
+            border: 1px solid #000;
+            cursor: crosshair};
+        .controls {
+            margin: 10px 0};
+    </style>
+</head>
+<body>
+    <h1>Interactive Drawing Application</h1>
+    <div class="controls">
+        <label>
+            <input type="radio" name="shape" value="line" checked> Line
+        </label>
+        <label>
+            <input type="radio" name="shape" value="rectangle"> Rectangle
+        </label>
+        <label>
+            <input type="radio" name="shape" value="circle"> Circle
+        </label>
+        <input type="color" id="colorPicker" value="#000000"> <!-- Color input -->
+        <button id="clearButton">Clear Canvas</button> <!-- Clear button -->
+    </div>
+    <canvas id="drawingCanvas" width="800" height="600"></canvas> <!-- Canvas element -->
+    
+    <script src="app.js"></script> <!-- Link to the JavaScript file -->
+</body>
+</html>
